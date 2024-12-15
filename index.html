@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Design</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Background Animation */
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #8e44ad, #3498db); }
+            50% { background: linear-gradient(135deg, #f39c12, #e74c3c); }
+            100% { background: linear-gradient(135deg, #8e44ad, #3498db); }
+        }
+
+        body {
+            animation: backgroundAnimation 10s infinite;
+        }
+
+        /* Container Styling */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .container:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #ecf0f1;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #f39c12;
+            transform: scale(1.05);
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #ecf0f1;
+            line-height: 1.6;
+        }
+
+        /* Link Styling */
+        a {
+            color: #16a085;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid #16a085;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #ecf0f1;
+            background-color: #16a085;
+            transform: translateY(-5px);
+            border-color: #ecf0f1;
+        }
+
+        /* Button Hover Effects */
+        a:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Python Turtle Flower Design</h1>
+        <p>Check out my Python script to create a beautiful flower design: 
+            <a href="flower.py" target="_blank">Flower Design Script</a>
+        </p>
+        <p>Explore how Python's turtle module can be used to craft stunning visual art.</p>
+    </div>
+</body>
+
+</html>
